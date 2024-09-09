@@ -24,8 +24,9 @@ app.post("/webhook", async (req, res) => {
         if (userMessage === "bonustime") {
           let messageData;
 
-          if (currentHour >= 8 && currentHour < 16) {
-            // 8 AM - 4 PM
+if (currentHour >= 0 && currentHour < 2) {
+  // เวลาตั้งแต่ 00:00 ถึง 02:00
+
             messageData = {
               to: event.source.userId,
               messages: [
@@ -37,40 +38,67 @@ app.post("/webhook", async (req, res) => {
                     contents: [
                       // ใส่ bubble ที่คุณต้องการ
                       {
-                        type: "bubble",
-                        body: {
-                          type: "box",
-                          layout: "vertical",
-                          contents: [
-                            {
-                              type: "image",
-                              url: "https://lh3.googleusercontent.com/d/1ooaoImg43UyVybNMMSracili7hAawcAM",
-                              size: "full",
-                              aspectRatio: "1:1.6667",
-                              gravity: "top",
-                              aspectMode: "fit",
-                            },
-                            {
-                              type: "box",
-                              layout: "vertical",
-                              contents: [
-                                {
-                                  type: "image",
-                                  url: "https://lh3.googleusercontent.com/d/1re9t83fHfyXgkZZWsDbiBBhHL4Q4OT3i",
-                                  animated: true,
-                                  size: "full",
-                                  aspectMode: "fit",
-                                  offsetTop: "110px",
-                                },
-                              ],
-                              position: "absolute",
-                              width: "300px",
-                              height: "500px",
-                            },
-                          ],
-                          paddingAll: "0px",
-                        },
-                      },
+  "type": "carousel",
+  "contents": [
+    {
+      "type": "bubble",
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "image",
+            "url": "https://lh3.googleusercontent.com/d/1-9-FeTJW81kjKyeNYetlEGulHpj4u10G",
+            "size": "full",
+            "aspectRatio": "1:1.6667",
+            "gravity": "top",
+            "aspectMode": "fit"
+          },
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "text",
+                "text": "ตั้งแต่เวลา 00:00 - 02:00",
+                "color": "#ffffff",
+                "size": "xl",
+                "weight": "bold",
+                "align": "center"
+              }
+            ],
+            "offsetTop": "320px",
+            "width": "100%",
+            "backgroundColor": "#00000000",
+            "position": "absolute"
+          },
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "image",
+                "url": "https://lh3.googleusercontent.com/d/1re9t83fHfyXgkZZWsDbiBBhHL4Q4OT3i",
+                "animated": true,
+                "size": "full",
+                "aspectMode": "fit",
+                "offsetTop": "110px"
+              },
+              {
+                "type": "image",
+                "url": "https://lh3.googleusercontent.com/d/1C7hcqZWrl4N7CR9HX4R-k72Zbv1wGhZc",
+                "size": "60px",
+                "offsetTop": "130px"
+              }
+            ],
+            "position": "absolute",
+            "width": "300px",
+            "height": "500px"
+          }
+        ],
+        "paddingAll": "0px"
+      }
+    },
                       {
                         type: "bubble",
                         body: {
@@ -79,7 +107,7 @@ app.post("/webhook", async (req, res) => {
                           contents: [
                             {
                               type: "image",
-                              url: "https://lh3.googleusercontent.com/d/1K6z8Jnzpj3msbmQfTdDYg-qHHSLwxAOV",
+                              url: "https://lh3.googleusercontent.com/d/1QalzmzUCLayGeOpJWWN7XtQsR0X1dmTX",
                               size: "full",
                               aspectMode: "fit",
                               aspectRatio: "3:5",
@@ -114,7 +142,7 @@ app.post("/webhook", async (req, res) => {
                           contents: [
                             {
                               type: "image",
-                              url: "https://lh3.googleusercontent.com/d/18rV31v9C0f_xQKP6Obc4k4HefWkU7oUH",
+                              url: "https://lh3.googleusercontent.com/d/1QalzmzUCLayGeOpJWWN7XtQsR0X1dmTX",
                               size: "full",
                               aspectMode: "fit",
                               aspectRatio: "3:5",
@@ -149,7 +177,7 @@ app.post("/webhook", async (req, res) => {
                           contents: [
                             {
                               type: "image",
-                              url: "https://lh3.googleusercontent.com/d/1p4qh-xbDrIWlthEiwCmc7z0ndqDP90NL",
+                              url: "https://lh3.googleusercontent.com/d/1QalzmzUCLayGeOpJWWN7XtQsR0X1dmTX",
                               size: "full",
                               aspectMode: "fit",
                               aspectRatio: "3:5",
@@ -184,7 +212,7 @@ app.post("/webhook", async (req, res) => {
                           contents: [
                             {
                               type: "image",
-                              url: "https://lh3.googleusercontent.com/d/1FBiznCtJcJzs4-2djN5L4L6UD4mFenr8",
+                              url: "https://lh3.googleusercontent.com/d/1QalzmzUCLayGeOpJWWN7XtQsR0X1dmTX",
                               size: "full",
                               aspectMode: "fit",
                               aspectRatio: "3:5",
