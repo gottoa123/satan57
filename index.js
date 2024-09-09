@@ -38,67 +38,67 @@ if (currentHour >= 0 && currentHour < 2) {
                     contents: [
                       // ใส่ bubble ที่คุณต้องการ
                       {
-  "type": "carousel",
-  "contents": [
-    {
-      "type": "bubble",
-      "body": {
-        "type": "box",
-        "layout": "vertical",
-        "contents": [
-          {
-            "type": "image",
-            "url": "https://lh3.googleusercontent.com/d/1-9-FeTJW81kjKyeNYetlEGulHpj4u10G",
-            "size": "full",
-            "aspectRatio": "1:1.6667",
-            "gravity": "top",
-            "aspectMode": "fit"
-          },
-          {
-            "type": "box",
-            "layout": "vertical",
-            "contents": [
-              {
-                "type": "text",
-                "text": "ตั้งแต่เวลา 00:00 - 02:00",
-                "color": "#ffffff",
-                "size": "xl",
-                "weight": "bold",
-                "align": "center"
-              }
-            ],
-            "offsetTop": "320px",
-            "width": "100%",
-            "backgroundColor": "#00000000",
-            "position": "absolute"
-          },
-          {
-            "type": "box",
-            "layout": "vertical",
-            "contents": [
-              {
-                "type": "image",
-                "url": "https://lh3.googleusercontent.com/d/1re9t83fHfyXgkZZWsDbiBBhHL4Q4OT3i",
-                "animated": true,
-                "size": "full",
-                "aspectMode": "fit",
-                "offsetTop": "110px"
-              },
-              {
-                "type": "image",
-                "url": "https://lh3.googleusercontent.com/d/1C7hcqZWrl4N7CR9HX4R-k72Zbv1wGhZc",
-                "size": "60px",
-                "offsetTop": "130px"
-              }
-            ],
-            "position": "absolute",
-            "width": "300px",
-            "height": "500px"
-          }
-        ],
-        "paddingAll": "0px"
-      }
-    },
+                    "type": "carousel",
+                    "contents": [
+                      {
+                        "type": "bubble",
+                        "body": {
+                          "type": "box",
+                          "layout": "vertical",
+                          "contents": [
+                            {
+                              "type": "image",
+                              "url": "https://lh3.googleusercontent.com/d/1-9-FeTJW81kjKyeNYetlEGulHpj4u10G",
+                              "size": "full",
+                              "aspectRatio": "1:1.6667",
+                              "gravity": "top",
+                              "aspectMode": "fit"
+                            },
+                            {
+                              "type": "box",
+                              "layout": "vertical",
+                              "contents": [
+                                {
+                                  "type": "text",
+                                  "text": "ตั้งแต่เวลา 00:00 - 02:00",
+                                  "color": "#ffffff",
+                                  "size": "xl",
+                                  "weight": "bold",
+                                  "align": "center"
+                                }
+                              ],
+                              "offsetTop": "320px",
+                              "width": "100%",
+                              "backgroundColor": "#00000000",
+                              "position": "absolute"
+                            },
+                            {
+                              "type": "box",
+                              "layout": "vertical",
+                              "contents": [
+                                {
+                                  "type": "image",
+                                  "url": "https://lh3.googleusercontent.com/d/1re9t83fHfyXgkZZWsDbiBBhHL4Q4OT3i",
+                                  "animated": true,
+                                  "size": "full",
+                                  "aspectMode": "fit",
+                                  "offsetTop": "110px"
+                                },
+                                {
+                                  "type": "image",
+                                  "url": "https://lh3.googleusercontent.com/d/1C7hcqZWrl4N7CR9HX4R-k72Zbv1wGhZc",
+                                  "size": "60px",
+                                  "offsetTop": "130px"
+                                }
+                              ],
+                              "position": "absolute",
+                              "width": "300px",
+                              "height": "500px"
+                            }
+                          ],
+                          "paddingAll": "0px"
+                        }
+                      },
                       {
                         type: "bubble",
                         body: {
@@ -245,8 +245,8 @@ if (currentHour >= 0 && currentHour < 2) {
                 },
               ],
             };
-          } else if (currentHour >= 20 && currentHour < 24) {
-            // 8 PM - 11:59 PM
+        if (currentHour >= 2 && currentHour < 4) {
+          // เวลาตั้งแต่ 02:00 ถึง 04:00
             messageData = {
               to: event.source.userId,
               messages: [
@@ -258,39 +258,66 @@ if (currentHour >= 0 && currentHour < 2) {
                     contents: [
                       // ใส่ bubble ที่คุณต้องการ
                       {
-                        type: "bubble",
-                        body: {
-                          type: "box",
-                          layout: "vertical",
-                          contents: [
+                    "type": "carousel",
+                    "contents": [
+                      {
+                        "type": "bubble",
+                        "body": {
+                          "type": "box",
+                          "layout": "vertical",
+                          "contents": [
                             {
-                              type: "image",
-                              url: "https://lh3.googleusercontent.com/d/1hUZdVFlhqnDsXskwfUSKeCfSPyBlDO2r",
-                              size: "full",
-                              aspectRatio: "1:1.6667",
-                              gravity: "top",
-                              aspectMode: "fit",
+                              "type": "image",
+                              "url": "https://lh3.googleusercontent.com/d/1-9-FeTJW81kjKyeNYetlEGulHpj4u10G",
+                              "size": "full",
+                              "aspectRatio": "1:1.6667",
+                              "gravity": "top",
+                              "aspectMode": "fit"
                             },
                             {
-                              type: "box",
-                              layout: "vertical",
-                              contents: [
+                              "type": "box",
+                              "layout": "vertical",
+                              "contents": [
                                 {
-                                  type: "image",
-                                  url: "https://lh3.googleusercontent.com/d/1re9t83fHfyXgkZZWsDbiBBhHL4Q4OT3i",
-                                  animated: true,
-                                  size: "full",
-                                  aspectMode: "fit",
-                                  offsetTop: "110px",
-                                },
+                                  "type": "text",
+                                  "text": "ตั้งแต่เวลา 02:00 - 04:00",
+                                  "color": "#ffffff",
+                                  "size": "xl",
+                                  "weight": "bold",
+                                  "align": "center"
+                                }
                               ],
-                              position: "absolute",
-                              width: "300px",
-                              height: "500px",
+                              "offsetTop": "320px",
+                              "width": "100%",
+                              "backgroundColor": "#00000000",
+                              "position": "absolute"
                             },
+                            {
+                              "type": "box",
+                              "layout": "vertical",
+                              "contents": [
+                                {
+                                  "type": "image",
+                                  "url": "https://lh3.googleusercontent.com/d/1re9t83fHfyXgkZZWsDbiBBhHL4Q4OT3i",
+                                  "animated": true,
+                                  "size": "full",
+                                  "aspectMode": "fit",
+                                  "offsetTop": "110px"
+                                },
+                                {
+                                  "type": "image",
+                                  "url": "https://lh3.googleusercontent.com/d/1C7hcqZWrl4N7CR9HX4R-k72Zbv1wGhZc",
+                                  "size": "60px",
+                                  "offsetTop": "130px"
+                                }
+                              ],
+                              "position": "absolute",
+                              "width": "300px",
+                              "height": "500px"
+                            }
                           ],
-                          paddingAll: "0px",
-                        },
+                          "paddingAll": "0px"
+                        }
                       },
                       {
                         type: "bubble",
@@ -300,7 +327,7 @@ if (currentHour >= 0 && currentHour < 2) {
                           contents: [
                             {
                               type: "image",
-                              url: "https://lh3.googleusercontent.com/d/1fV30CQkneeK3uO9Xpq-7MA7Y-8smO7c_",
+                              url: "https://lh3.googleusercontent.com/d/1QalzmzUCLayGeOpJWWN7XtQsR0X1dmTX",
                               size: "full",
                               aspectMode: "fit",
                               aspectRatio: "3:5",
@@ -335,7 +362,7 @@ if (currentHour >= 0 && currentHour < 2) {
                           contents: [
                             {
                               type: "image",
-                              url: "https://lh3.googleusercontent.com/d/1EKm9bvaMP140_SujKkobrFT45dGAxuJ6",
+                              url: "https://lh3.googleusercontent.com/d/1QalzmzUCLayGeOpJWWN7XtQsR0X1dmTX",
                               size: "full",
                               aspectMode: "fit",
                               aspectRatio: "3:5",
@@ -370,7 +397,7 @@ if (currentHour >= 0 && currentHour < 2) {
                           contents: [
                             {
                               type: "image",
-                              url: "https://lh3.googleusercontent.com/d/1-ZIuhxei7j2yGKl5c_XQYNUpXzi1viZ4",
+                              url: "https://lh3.googleusercontent.com/d/1QalzmzUCLayGeOpJWWN7XtQsR0X1dmTX",
                               size: "full",
                               aspectMode: "fit",
                               aspectRatio: "3:5",
@@ -405,7 +432,7 @@ if (currentHour >= 0 && currentHour < 2) {
                           contents: [
                             {
                               type: "image",
-                              url: "https://lh3.googleusercontent.com/d/1lgZdnfbUzgRrQq-_FmGUt6gM3d6dfReA",
+                              url: "https://lh3.googleusercontent.com/d/1QalzmzUCLayGeOpJWWN7XtQsR0X1dmTX",
                               size: "full",
                               aspectMode: "fit",
                               aspectRatio: "3:5",
