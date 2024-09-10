@@ -2225,6 +2225,446 @@ app.post("/webhook", async (req, res) => {
                 },
               ],
             };
+          } else if (currentHour >= 20 && currentHour < 22) {
+          // เวลาตั้งแต่ 20:00 ถึง 22:00
+            messageData = {
+              to: event.source.userId,
+              messages: [
+                {
+                  type: "flex",
+                  altText: "BONUSTIME ที่กำลังแตกในช่วงนี้",
+                  contents: {
+                    type: "carousel",
+                    contents: [
+                      // ใส่ bubble ที่คุณต้องการ
+                      {
+                    "type": "carousel",
+                    "contents": [
+                      {
+                        "type": "bubble",
+                        "body": {
+                          "type": "box",
+                          "layout": "vertical",
+                          "contents": [
+                            {
+                              "type": "image",
+                              "url": "https://lh3.googleusercontent.com/d/1-9-FeTJW81kjKyeNYetlEGulHpj4u10G",
+                              "size": "full",
+                              "aspectRatio": "1:1.6667",
+                              "gravity": "top",
+                              "aspectMode": "fit"
+                            },
+                            {
+                              "type": "box",
+                              "layout": "vertical",
+                              "contents": [
+                                {
+                                  "type": "text",
+                                  "text": "ตั้งแต่เวลา 20:00 - 22:00",
+                                  "color": "#ffffff",
+                                  "size": "xl",
+                                  "weight": "bold",
+                                  "align": "center"
+                                }
+                              ],
+                              "offsetTop": "320px",
+                              "width": "100%",
+                              "backgroundColor": "#00000000",
+                              "position": "absolute"
+                            },
+                            {
+                              "type": "box",
+                              "layout": "vertical",
+                              "contents": [
+                                {
+                                  "type": "image",
+                                  "url": "https://lh3.googleusercontent.com/d/1re9t83fHfyXgkZZWsDbiBBhHL4Q4OT3i",
+                                  "animated": true,
+                                  "size": "full",
+                                  "aspectMode": "fit",
+                                  "offsetTop": "110px"
+                                },
+                                {
+                                  "type": "image",
+                                  "url": "https://lh3.googleusercontent.com/d/1C7hcqZWrl4N7CR9HX4R-k72Zbv1wGhZc",
+                                  "size": "60px",
+                                  "offsetTop": "130px"
+                                }
+                              ],
+                              "position": "absolute",
+                              "width": "300px",
+                              "height": "500px"
+                            }
+                          ],
+                          "paddingAll": "0px"
+                        }
+                      },
+                      {
+                        type: "bubble",
+                        body: {
+                          type: "box",
+                          layout: "vertical",
+                          contents: [
+                            {
+                              type: "image",
+                              url: "https://lh3.googleusercontent.com/d/1QalzmzUCLayGeOpJWWN7XtQsR0X1dmTX",
+                              size: "full",
+                              aspectMode: "fit",
+                              aspectRatio: "3:5",
+                              gravity: "top",
+                            },
+                            {
+                              type: "box",
+                              layout: "vertical",
+                              contents: [
+                                {
+                                  type: "image",
+                                  url: "https://lh3.googleusercontent.com/d/1ihrNsUzGCBtHbH1LrdOXP8CmTOwy7m3y",
+                                  animated: true,
+                                  size: "full",
+                                  aspectMode: "fit",
+                                  offsetTop: "160px",
+                                },
+                              ],
+                              position: "absolute",
+                              width: "300px",
+                              height: "500px",
+                            },
+                          ],
+                          paddingAll: "0px",
+                        },
+                      },
+                      {
+                        type: "bubble",
+                        body: {
+                          type: "box",
+                          layout: "vertical",
+                          contents: [
+                            {
+                              type: "image",
+                              url: "https://lh3.googleusercontent.com/d/1QalzmzUCLayGeOpJWWN7XtQsR0X1dmTX",
+                              size: "full",
+                              aspectMode: "fit",
+                              aspectRatio: "3:5",
+                              gravity: "top",
+                            },
+                            {
+                              type: "box",
+                              layout: "vertical",
+                              contents: [
+                                {
+                                  type: "image",
+                                  url: "https://lh3.googleusercontent.com/d/14m4VT8eNGFKt6R8kDSBmlMmSu3fJLJ4g",
+                                  animated: true,
+                                  size: "full",
+                                  aspectMode: "fit",
+                                  offsetTop: "160px",
+                                },
+                              ],
+                              position: "absolute",
+                              width: "300px",
+                              height: "500px",
+                            },
+                          ],
+                          paddingAll: "0px",
+                        },
+                      },
+                      {
+                        type: "bubble",
+                        body: {
+                          type: "box",
+                          layout: "vertical",
+                          contents: [
+                            {
+                              type: "image",
+                              url: "https://lh3.googleusercontent.com/d/1QalzmzUCLayGeOpJWWN7XtQsR0X1dmTX",
+                              size: "full",
+                              aspectMode: "fit",
+                              aspectRatio: "3:5",
+                              gravity: "top",
+                            },
+                            {
+                              type: "box",
+                              layout: "vertical",
+                              contents: [
+                                {
+                                  type: "image",
+                                  url: "https://lh3.googleusercontent.com/d/1L9vCXJcmxlvlpCCPAzVO6ZgBUGf_2RJa",
+                                  animated: true,
+                                  size: "full",
+                                  aspectMode: "fit",
+                                  offsetTop: "160px",
+                                },
+                              ],
+                              position: "absolute",
+                              width: "300px",
+                              height: "500px",
+                            },
+                          ],
+                          paddingAll: "0px",
+                        },
+                      },
+                      {
+                        type: "bubble",
+                        body: {
+                          type: "box",
+                          layout: "vertical",
+                          contents: [
+                            {
+                              type: "image",
+                              url: "https://lh3.googleusercontent.com/d/1QalzmzUCLayGeOpJWWN7XtQsR0X1dmTX",
+                              size: "full",
+                              aspectMode: "fit",
+                              aspectRatio: "3:5",
+                              gravity: "top",
+                            },
+                            {
+                              type: "box",
+                              layout: "vertical",
+                              contents: [
+                                {
+                                  type: "image",
+                                  url: "https://lh3.googleusercontent.com/d/177jyoiiRTJxv85510vdIHoM0vEVX4l0f",
+                                  animated: true,
+                                  size: "full",
+                                  aspectMode: "fit",
+                                  offsetTop: "160px",
+                                },
+                              ],
+                              position: "absolute",
+                              width: "300px",
+                              height: "500px",
+                            },
+                            // เพิ่ม bubble อื่น ๆ ที่ต้องการ
+                          ],
+                          paddingAll: "0px",
+                        },
+                      },
+                    ],
+                  },
+                },
+              ],
+            };
+          } else if (currentHour >= 22 && currentHour < 0) {
+          // เวลาตั้งแต่ 22:00 ถึง 00:00
+            messageData = {
+              to: event.source.userId,
+              messages: [
+                {
+                  type: "flex",
+                  altText: "BONUSTIME ที่กำลังแตกในช่วงนี้",
+                  contents: {
+                    type: "carousel",
+                    contents: [
+                      // ใส่ bubble ที่คุณต้องการ
+                      {
+                    "type": "carousel",
+                    "contents": [
+                      {
+                        "type": "bubble",
+                        "body": {
+                          "type": "box",
+                          "layout": "vertical",
+                          "contents": [
+                            {
+                              "type": "image",
+                              "url": "https://lh3.googleusercontent.com/d/1-9-FeTJW81kjKyeNYetlEGulHpj4u10G",
+                              "size": "full",
+                              "aspectRatio": "1:1.6667",
+                              "gravity": "top",
+                              "aspectMode": "fit"
+                            },
+                            {
+                              "type": "box",
+                              "layout": "vertical",
+                              "contents": [
+                                {
+                                  "type": "text",
+                                  "text": "ตั้งแต่เวลา 22:00 - 00:00",
+                                  "color": "#ffffff",
+                                  "size": "xl",
+                                  "weight": "bold",
+                                  "align": "center"
+                                }
+                              ],
+                              "offsetTop": "320px",
+                              "width": "100%",
+                              "backgroundColor": "#00000000",
+                              "position": "absolute"
+                            },
+                            {
+                              "type": "box",
+                              "layout": "vertical",
+                              "contents": [
+                                {
+                                  "type": "image",
+                                  "url": "https://lh3.googleusercontent.com/d/1re9t83fHfyXgkZZWsDbiBBhHL4Q4OT3i",
+                                  "animated": true,
+                                  "size": "full",
+                                  "aspectMode": "fit",
+                                  "offsetTop": "110px"
+                                },
+                                {
+                                  "type": "image",
+                                  "url": "https://lh3.googleusercontent.com/d/1C7hcqZWrl4N7CR9HX4R-k72Zbv1wGhZc",
+                                  "size": "60px",
+                                  "offsetTop": "130px"
+                                }
+                              ],
+                              "position": "absolute",
+                              "width": "300px",
+                              "height": "500px"
+                            }
+                          ],
+                          "paddingAll": "0px"
+                        }
+                      },
+                      {
+                        type: "bubble",
+                        body: {
+                          type: "box",
+                          layout: "vertical",
+                          contents: [
+                            {
+                              type: "image",
+                              url: "https://lh3.googleusercontent.com/d/1QalzmzUCLayGeOpJWWN7XtQsR0X1dmTX",
+                              size: "full",
+                              aspectMode: "fit",
+                              aspectRatio: "3:5",
+                              gravity: "top",
+                            },
+                            {
+                              type: "box",
+                              layout: "vertical",
+                              contents: [
+                                {
+                                  type: "image",
+                                  url: "https://lh3.googleusercontent.com/d/1ihrNsUzGCBtHbH1LrdOXP8CmTOwy7m3y",
+                                  animated: true,
+                                  size: "full",
+                                  aspectMode: "fit",
+                                  offsetTop: "160px",
+                                },
+                              ],
+                              position: "absolute",
+                              width: "300px",
+                              height: "500px",
+                            },
+                          ],
+                          paddingAll: "0px",
+                        },
+                      },
+                      {
+                        type: "bubble",
+                        body: {
+                          type: "box",
+                          layout: "vertical",
+                          contents: [
+                            {
+                              type: "image",
+                              url: "https://lh3.googleusercontent.com/d/1QalzmzUCLayGeOpJWWN7XtQsR0X1dmTX",
+                              size: "full",
+                              aspectMode: "fit",
+                              aspectRatio: "3:5",
+                              gravity: "top",
+                            },
+                            {
+                              type: "box",
+                              layout: "vertical",
+                              contents: [
+                                {
+                                  type: "image",
+                                  url: "https://lh3.googleusercontent.com/d/14m4VT8eNGFKt6R8kDSBmlMmSu3fJLJ4g",
+                                  animated: true,
+                                  size: "full",
+                                  aspectMode: "fit",
+                                  offsetTop: "160px",
+                                },
+                              ],
+                              position: "absolute",
+                              width: "300px",
+                              height: "500px",
+                            },
+                          ],
+                          paddingAll: "0px",
+                        },
+                      },
+                      {
+                        type: "bubble",
+                        body: {
+                          type: "box",
+                          layout: "vertical",
+                          contents: [
+                            {
+                              type: "image",
+                              url: "https://lh3.googleusercontent.com/d/1QalzmzUCLayGeOpJWWN7XtQsR0X1dmTX",
+                              size: "full",
+                              aspectMode: "fit",
+                              aspectRatio: "3:5",
+                              gravity: "top",
+                            },
+                            {
+                              type: "box",
+                              layout: "vertical",
+                              contents: [
+                                {
+                                  type: "image",
+                                  url: "https://lh3.googleusercontent.com/d/1L9vCXJcmxlvlpCCPAzVO6ZgBUGf_2RJa",
+                                  animated: true,
+                                  size: "full",
+                                  aspectMode: "fit",
+                                  offsetTop: "160px",
+                                },
+                              ],
+                              position: "absolute",
+                              width: "300px",
+                              height: "500px",
+                            },
+                          ],
+                          paddingAll: "0px",
+                        },
+                      },
+                      {
+                        type: "bubble",
+                        body: {
+                          type: "box",
+                          layout: "vertical",
+                          contents: [
+                            {
+                              type: "image",
+                              url: "https://lh3.googleusercontent.com/d/1QalzmzUCLayGeOpJWWN7XtQsR0X1dmTX",
+                              size: "full",
+                              aspectMode: "fit",
+                              aspectRatio: "3:5",
+                              gravity: "top",
+                            },
+                            {
+                              type: "box",
+                              layout: "vertical",
+                              contents: [
+                                {
+                                  type: "image",
+                                  url: "https://lh3.googleusercontent.com/d/177jyoiiRTJxv85510vdIHoM0vEVX4l0f",
+                                  animated: true,
+                                  size: "full",
+                                  aspectMode: "fit",
+                                  offsetTop: "160px",
+                                },
+                              ],
+                              position: "absolute",
+                              width: "300px",
+                              height: "500px",
+                            },
+                            // เพิ่ม bubble อื่น ๆ ที่ต้องการ
+                          ],
+                          paddingAll: "0px",
+                        },
+                      },
+                    ],
+                  },
+                },
+              ],
+            };
           }
 
           try {
