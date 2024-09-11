@@ -6,7 +6,7 @@ const app = express();
 app.use(express.json()); // ใช้การแปลง JSON ในตัวของ Express
 app.use(bodyParser.json());
 
-const LINE_ACCESS_TOKEN = process.env.satan47_LINE_ACCESS_TOKEN;
+const LINE_ACCESS_TOKEN = process.env.LINE_ACCESS_TOKEN;
 
 app.post("/webhook", async (req, res) => {
   console.log('Request body:', req.body); // ตรวจสอบข้อมูลที่ได้รับ
@@ -2664,7 +2664,6 @@ app.post("/webhook", async (req, res) => {
                     };
                   }
 
- if (messageData) { // ตรวจสอบว่า messageData ถูกกำหนดค่าหรือไม่
           try {
             console.log("Sending message:", messageData); // ตรวจสอบข้อมูลที่กำลังจะส่ง
             await axios.post(
