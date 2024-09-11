@@ -6,7 +6,7 @@ const app = express();
 app.use(express.json()); // ใช้การแปลง JSON ในตัวของ Express
 app.use(bodyParser.json());
 
-const LINE_ACCESS_TOKEN = process.env.LINE_ACCESS_TOKEN;
+const LINE_ACCESS_TOKEN = process.env.satan47_LINE_ACCESS_TOKEN;
 
 app.post("/webhook", async (req, res) => {
   console.log('Request body:', req.body); // ตรวจสอบข้อมูลที่ได้รับ
