@@ -21,9 +21,19 @@ app.post("/webhook", async (req, res) => {
 
         console.log("Current Hour:", currentHour); // ตรวจสอบค่าเวลาปัจจุบัน
 
-        if (userMessage === "bonustime") {
-          let messageData;
+        let messageData;
 
+        if (userMessage === "bonustime") {
+          messageData = {
+            to: event.source.userId,
+            messages: [
+              {
+                type: "text",
+                text: "คำสั่ง 'bonustime' ได้รับการประมวลผลแล้ว!"
+              }
+            ]
+          };
+          
           if (currentHour >= 0 && currentHour < 2) {
             // เวลาตั้งแต่ 00:00 ถึง 02:00
             messageData = {
@@ -2654,6 +2664,7 @@ app.post("/webhook", async (req, res) => {
                     };
                   }
 
+ if (messageData) { // ตรวจสอบว่า messageData ถูกกำหนดค่าหรือไม่
           try {
             console.log("Sending message:", messageData); // ตรวจสอบข้อมูลที่กำลังจะส่ง
             await axios.post(
